@@ -48,7 +48,7 @@ function MyBooking() {
     try {
       setLoading(true);
       const result = await axios.post(
-        "https://gasium-api.vercel.app/api/bookings/cancelBooking",
+        "https://gasium-backend.onrender.com/api/bookings/cancelBooking",
         {
           bookingid,
           gasid,

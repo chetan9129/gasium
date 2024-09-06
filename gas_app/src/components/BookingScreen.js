@@ -75,7 +75,7 @@ function BookingScreen() {
     };
     try {
       const result = await axios.post(
-        "https://gasium-api.vercel.app/api/bookings/bookgas",
+        "https://gasium-backend.onrender.com/api/bookings/bookgas",
         bookingDetails
       );
       Swal.fire({
