@@ -41,10 +41,13 @@ function BookingScreen() {
       try {
         setLoading(true);
         const data = (
-          await axios.post(`http://localhost:5000/api/gases/getgasbyid`, {
-            gasid: gasid,
-            // bookedDate: selectedDate,
-          })
+          await axios.post(
+            `https://gasium-backend.onrender.com/api/gases/getgasbyid`,
+            {
+              gasid: gasid,
+              // bookedDate: selectedDate,
+            }
+          )
         ).data;
 
         setGases(data);

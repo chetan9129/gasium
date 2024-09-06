@@ -14,7 +14,7 @@ function AllUser() {
       try {
         setLoading(true);
         const datas = await axios.get(
-          "http://localhost:5000/api/users/getAllUsers"
+          "https://gasium-backend.onrender.com/api/users/getAllUsers"
         );
         const response = datas.data;
         setUsers(response);

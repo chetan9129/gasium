@@ -21,7 +21,7 @@ function MyBooking() {
       try {
         setLoading(true);
         const book = await axios.post(
-          "http://localhost:5000/api/bookings/getBookingsByUserId",
+          "https://gasium-backend.onrender.com/api/bookings/getBookingsByUserId",
           {
             userid: user._id,
           }

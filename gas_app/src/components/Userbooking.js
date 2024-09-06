@@ -17,7 +17,7 @@ function Userbooking() {
       try {
         setLoading(true);
         const book = await axios.get(
-          "http://localhost:5000/api/bookings/getAllBooking"
+          "https://gasium-backend.onrender.com/api/bookings/getAllBooking"
         );
         const response = book.data;
         setBookings(response);

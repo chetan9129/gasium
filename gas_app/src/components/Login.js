@@ -25,7 +25,7 @@ function Login() {
     };
     try {
       const result = await axios.post(
-        "http://localhost:5000/api/users/login",
+        "https://gasium-backend.onrender.com/api/users/login",
         user
       );
       localStorage.setItem("currentUser", JSON.stringify(result.data));

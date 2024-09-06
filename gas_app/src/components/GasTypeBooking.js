@@ -15,7 +15,7 @@ function GasTypeBooking() {
       try {
         setLoading(true);
         const { data } = await axios.get(
-          `http://localhost:5000/api/gases/getAllGases`
+          `https://gasium-backend.onrender.com/api/gases/getAllGases`
         );
         setGases(data);
         setLoading(false);

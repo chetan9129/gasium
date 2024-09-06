@@ -14,7 +14,7 @@ function Inventory() {
       try {
         setLoading(true);
         const { data } = await axios.get(
-          `http://localhost:5000/api/gas/getAllGasAdmin`
+          `https://gasium-backend.onrender.com/api/gas/getAllGasAdmin`
         );
         setGases(data);
         setLoading(false);

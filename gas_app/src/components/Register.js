@@ -46,7 +46,7 @@ function Register() {
           );
         } else {
           const result = await axios.post(
-            "http://localhost:5000/api/users/register",
+            "https://gasium-backend.onrender.com/api/users/register",
             user
           ).data;
           difftoast("Registered Successfully");
